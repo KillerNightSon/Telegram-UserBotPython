@@ -30,8 +30,8 @@ from googletrans import Translator
 from random import randint
 from zalgo_text import zalgo
 logging.basicConfig(level=logging.DEBUG)
-api_id=os.environ['API_KEY']
-api_hash=os.environ['API_HASH']
+api_id=os.environ['2790126']
+api_hash=os.environ['34ac11b1680b4a97b7fa6c837d38470c']
 global SPAM
 SPAM=False
 global ISAFK
@@ -46,7 +46,7 @@ SPAM_ALLOWANCE=3
 global MUTING_USERS
 MUTING_USERS={}
 COUNT_MSG=0
-SUDO_USERS=[518221376,538543304,423070089,234480941]
+SUDO_USERS=[1104456087]
 WIDE_MAP = dict((i, i + 0xFEE0) for i in range(0x21, 0x7F))
 WIDE_MAP[0x20] = 0x3000
 bot = TelegramClient('userbot', api_id, api_hash).start()
